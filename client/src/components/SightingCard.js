@@ -9,13 +9,13 @@ const SightingCard = ({sighting, removeSighting}) => {
         })
     }
     return (
-        <>
+        <div className="sighting-card">
             <h1>{sighting.species}</h1>
             <p>Location: {sighting.location}</p>
             <p>Date: {sighting.date}</p>
             <button onClick={handleDelete}> 🗑 </button>
             <hr></hr>
-        </>
+        </div>
     )
 }
 
